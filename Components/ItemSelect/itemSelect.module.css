@@ -1,0 +1,61 @@
+.myselect{
+    border: none;
+    width: 240px;
+    font-size: 14px;
+    color: #1890FF;
+    font-weight: 500;
+    outline: none;
+    width: inherit;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    width: 240px ;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap:8px
+}
+.option{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: right;
+    color: #0E1A33;
+    background: #F4F7FD;
+    width: 100%;
+    cursor: pointer;
+}
+.selected{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: right;
+    color: #1890FF;
+    background: #E6F7FF;
+    box-shadow: inset -3px 0px 0px #1890FF;
+    border-right: solid 3px #1890FF;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 1300px) {
+    .myselect{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .myselect{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .myselect{
+        font-size: 10px;
+    }
+}
